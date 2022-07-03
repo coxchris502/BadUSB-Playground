@@ -1,0 +1,8 @@
+REM FalsePhilosopher
+REM WIP
+REM Target win
+DELAY 300
+CTRL+A
+DELAY 500
+SHIFT+F3
+

