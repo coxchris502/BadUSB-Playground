@@ -1,0 +1,8 @@
+REM FalsePhilosopher
+REM Target win
+REM WIP changes numpad keys to mouse and inputs random mouse movements.
+DELAY 300
+LEFTALT+LEFTSHIFT+NUMLOCK
+DELAY 300
+REM insert numbers
+LEFTALT+LEFTSHIFT+NUMLOCK

@@ -8,8 +8,8 @@ REM Source: https://github.com/nilsstreedain/Ducky-Scripts/
 ID 05ac:021e Apple:Keyboard
 DELAY 200
 COMMAND SPACE
-DELAY 10
-STRING terminal
+DELAY 100
+STRING terminal.app
 DELAY 100
 ENTER
 DELAY 100
