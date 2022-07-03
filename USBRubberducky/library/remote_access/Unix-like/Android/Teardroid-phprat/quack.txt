@@ -1,3 +1,0 @@
-REM VID/PID
-DELAY 300
-REM install tmux and wget apk and install or use cve or something idk do your own legwork skriptkidz. https://github.com/ScRiPt1337/Teardroid-phprat

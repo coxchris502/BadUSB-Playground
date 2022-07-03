@@ -1,4 +1,0 @@
-REM FalsePhilosopher
-REM target win
-REM WIP changes numpad keys to mouse and inputs random mouse movements. Mean leaves it in troll mode and creates a script to input numbers so you can unplug.
-
