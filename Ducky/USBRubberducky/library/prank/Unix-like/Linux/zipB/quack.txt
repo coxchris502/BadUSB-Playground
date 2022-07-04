@@ -1,7 +1,7 @@
 REM FalsePhilosopher
 REM Target linux
 DELAY 300
-REM Minimize all windows as that ensures launch happens smoother then restore later for no signs of funny business.
+REM Minimize all windows as that ensures launch happens smoother.
 WINDOWS d
 DELAY 300
 CTRL-ALT t
@@ -20,6 +20,7 @@ DELAY 300
 CTRL C
 REM i'm sure there's a better way to do that.
 DELAY 300
+REM sneakyboi
 STRING history | grep history
 DELAY 200
 ENTER
