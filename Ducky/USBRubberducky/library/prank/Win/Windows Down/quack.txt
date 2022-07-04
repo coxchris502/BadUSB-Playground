@@ -1,5 +1,5 @@
 REM FalsePhilosopher
 REM WIP
 DELAY 300
-WINDOWS+m
+WINDOWS m
 
