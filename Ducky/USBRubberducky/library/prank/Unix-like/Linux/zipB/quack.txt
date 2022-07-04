@@ -18,6 +18,7 @@ DELAY 1500
 CTRL C
 DELAY 300
 CTRL C
+REM i'm sure there's a better way to do that.
 DELAY 300
 STRING history | grep history
 DELAY 200
