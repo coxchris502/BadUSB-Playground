@@ -1,0 +1,7 @@
+*.pem
+*.log
+.DS_Store
+muraena
+build/
+static/
+vendor/
