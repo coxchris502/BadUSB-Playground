@@ -4,7 +4,7 @@ REM Target:  Unix-like tested on kubuntu 22.04.
 REM Props: Hak5, strippers and memes
 REM Version: 1.0
 REM Category: Prank
-REM Screen does a barrel roll, then a reverse barrel roll, leaves the screen inverted and loads up an upside down Ricardo Milos dancing to dota by basshunter video. This version launches it on youtube.
+REM Rotates the screen 180 and loads up a 180 Ricardo Milos dancing to dota by basshunter video. This version launches it on youtube.
 REM
 DELAY 300
 REM Minimize all windows as that ensures launch happens smoother.
@@ -12,42 +12,10 @@ WINDOWS d
 DELAY 300
 CTRL-ALT t
 DELAY 2000
-STRING xrandr -o left
-DELAY 300
-ENTER
-DELAY 500
 STRING xrandr -o inverted
 DELAY 300
 ENTER
-DELAY 500
-STRING xrandr -o right
 DELAY 300
-ENTER
-DELAY 500
-STRING xrandr -o normal
-DELAY 300
-ENTER
-DELAY 500
-STRING xrandr -o right
-DELAY 300
-ENTER
-DELAY 500
-STRING xrandr -o inverted
-DELAY 300
-ENTER
-DELAY 500
-STRING xrandr -o left
-DELAY 300
-ENTER
-DELAY 500
-STRING xrandr -o normal
-DELAY 300
-ENTER
-DELAY 500
-STRING xrandr -o inverted
-DELAY 300
-ENTER
-DELAY 500
 STRING open https://youtu.be/OEwid6Rel0w
 DELAY 300
 ENTER
