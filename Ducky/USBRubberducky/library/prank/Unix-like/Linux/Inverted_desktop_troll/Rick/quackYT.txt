@@ -4,7 +4,7 @@ REM Target:  Unix-like tested on kubuntu 22.04.
 REM Props: Hak5, strippers and memes
 REM Version: 1.0
 REM Category: Prank
-REM Rotates the screen 180 and loads up a 180 Ricardo Milos dancing to dota by basshunter video. This version launches it on youtube.
+REM Rotates the screen 180 and loads up a 180 Rickroll. This version launches it on youtube.
 REM
 DELAY 300
 REM Minimize all windows as that ensures launch happens smoother.
