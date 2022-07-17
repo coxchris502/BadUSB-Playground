@@ -17,7 +17,7 @@ DELAY 500
 ENTER
 DELAY 500
 ALT F4
-REM If you wanna spawn multiple instances an be an evil dick don't hit lostserver a bunch of times, just spawn a new background unzip of the same zip. Don't forget to delete line 19, also know nobody likes you an your moms a hoe lol. So not cool!!!
+REM If you wanna spawn multiple instances an be an evil dick don't hit lostserver a bunch of times, just spawn a new background unzip of the same zip. Don't forget to delete line 19, also know nobody likes you. So not cool!!!
 REM give it 10 sec's to download
 REM DELAY 10000
 REM CTRL c
