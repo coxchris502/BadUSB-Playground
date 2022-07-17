@@ -16,7 +16,7 @@ STRING xrandr -o inverted
 DELAY 300
 ENTER
 DELAY 300
-STRING vlc https://github.com/FalsePhilosopher/BadUSB-Playground/raw/main/Ducky/USBRubberducky/library/prank/Unix-like/Linux/Inverted_desktop_milos/milos.mp4
+STRING vlc https://github.com/FalsePhilosopher/BadUSB-Playground/raw/main/Ducky/USBRubberducky/library/prank/Unix-like/Linux/Inverted_desktop_troll/milos/milos.mp4
 DELAY 300
 ENTER
 DELAY 3000
