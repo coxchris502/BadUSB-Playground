@@ -48,11 +48,8 @@ STRING xrandr -o inverted
 DELAY 300
 ENTER
 DELAY 500
-STRING open https://youtu.be/OEwid6Rel0w
+STRING vlc https://github.com/FalsePhilosopher/BadUSB-Playground/raw/main/Ducky/USBRubberducky/library/prank/Unix-like/Linux/Inverted_desktop_milos/untitled.mp4 |
 DELAY 300
 ENTER
-REM big delay for trash firefox snap to open
-DELAY 10000
+DELAY 3000
 STRING f
-DELAY 300
-SPACE
