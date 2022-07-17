@@ -12,11 +12,7 @@ WINDOWS d
 DELAY 300
 CTRL-ALT t
 DELAY 2000
-STRING xrandr -o inverted
-DELAY 300
-ENTER
-DELAY 300
-STRING vlc https://github.com/FalsePhilosopher/BadUSB-Playground/raw/main/Ducky/USBRubberducky/library/prank/Unix-like/Linux/Inverted_desktop_troll/Rick/rick.mp4
+STRING xrandr -o inverted && vlc https://github.com/FalsePhilosopher/BadUSB-Playground/raw/main/Ducky/USBRubberducky/library/prank/Unix-like/Linux/Inverted_desktop_troll/Rick/rick.mp4
 DELAY 300
 ENTER
 DELAY 3000

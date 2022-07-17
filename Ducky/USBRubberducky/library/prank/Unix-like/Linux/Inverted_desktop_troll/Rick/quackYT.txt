@@ -12,11 +12,7 @@ WINDOWS d
 DELAY 300
 CTRL-ALT t
 DELAY 2000
-STRING xrandr -o inverted
-DELAY 300
-ENTER
-DELAY 300
-STRING open https://youtu.be/OWOgm8VKHOk
+STRING xrandr -o inverted && open https://youtu.be/OWOgm8VKHOk
 DELAY 300
 ENTER
 REM big delay for trash firefox snap to open
