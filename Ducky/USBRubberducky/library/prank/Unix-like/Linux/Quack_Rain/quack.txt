@@ -4,7 +4,7 @@ REM Target:  Unix-like tested on kubuntu 22.04.
 REM Props: Hak5, strippers and memes
 REM Version: 1.0
 REM Category: Prank
-REM Launches terminal and downloads/unzips cxxmatrix and runs a matrix rain saying you've been quacked!
+REM Why leave a boring message in a text editor or in the terminal when you can leave it in matrix rain! Launches terminal and downloads/unzips cxxmatrix and runs it saying you got quacked!
 REM
 DELAY 300
 REM Minimize all windows as that ensures launch happens smoother.

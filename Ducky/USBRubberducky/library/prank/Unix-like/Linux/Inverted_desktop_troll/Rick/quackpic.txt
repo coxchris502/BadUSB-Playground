@@ -1,7 +1,7 @@
 REM Title: Inverted display Rickroll Tux style
 REM Author: FalsePhilosopher
 REM Target:  Unix-like tested on kubuntu 22.04.
-REM Props: Hak5, strippers and memes
+REM Props: Hak5, keroserene for their terminal rickroll work and memes
 REM Version: 1.0
 REM Category: Prank
 REM Rotates the screen 180 and loads up a 180 Rickroll. This version uses the terminal rickroll audio and loads up a 180 rick pic.
