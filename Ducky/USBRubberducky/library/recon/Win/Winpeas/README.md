@@ -1,6 +1,6 @@
 # Windows Privilege Escalation Awesome Scripts
 
-https://github.com/carlospolop/PEASS-ng
+https://github.com/carlospolop/PEASS-ng/tree/master/winPEAS
 
 ![](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/raw/master/winPEAS/winPEASexe/images/winpeas.png)
 

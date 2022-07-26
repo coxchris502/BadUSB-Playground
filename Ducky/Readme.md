@@ -1,5 +1,7 @@
 # Writing duckyScript
 
+Can't get the DTK(ducktoolkit user script https://ducktoolkit.com/userscripts) downloader in ducky to work, maybe it's cuz i'm running powershell for linux. But there's probably more to come and most are just templates/need tweaking or converted to duck script functions.
+
 https://github.com/dekuNukem/duckyPad
 
 [Get duckyPad](https://www.tindie.com/products/21984/) | [Official Discord](https://discord.gg/4sJCBx5) | [Getting Started](getting_started.md) | [Table of Contents](#table-of-contents)
